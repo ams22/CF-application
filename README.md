@@ -1,5 +1,5 @@
 # Codeforces-application
-mobile application for codeforces.com
+ios - приложение для доступа к ресурсу codeforces.com
 
 ![Codeforces logo](docs/codeforces.png)
 
