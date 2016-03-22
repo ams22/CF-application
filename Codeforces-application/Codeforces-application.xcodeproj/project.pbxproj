@@ -210,6 +210,7 @@
 				TargetAttributes = {
 					B9FAB6DB1CA1E0FB003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2V75G8JXAV;
 					};
 					B9FAB6F71CA1E0FC003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -417,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Codeforces-application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.2;
 			};
 			name = Debug;
 		};
@@ -428,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Codeforces-application/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.2;
 			};
 			name = Release;
 		};
@@ -502,6 +509,7 @@
 				B9FAB70E1CA1E0FC003D8A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationTests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +518,7 @@
 				B9FAB7111CA1E0FC003D8A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationUITests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +527,7 @@
 				B9FAB7141CA1E0FC003D8A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
