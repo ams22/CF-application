@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */ = {isa = PBXBuildFile; fileRef = B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */; };
 		B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E01CA1E0FB003D8A45 /* main.m */; };
 		B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */; };
 		B9FAB6E71CA1E0FB003D8A45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E61CA1E0FB003D8A45 /* ViewController.m */; };
@@ -36,7 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		B9FAB6DC1CA1E0FB003D8A45 /* Codeforces-application.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Codeforces-application.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = codeforces.png; path = ../../docs/codeforces.png; sourceTree = "<group>"; };
+		B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CF-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6E01CA1E0FB003D8A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -47,10 +49,10 @@
 		B9FAB6EE1CA1E0FB003D8A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9FAB6F11CA1E0FB003D8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9FAB6F31CA1E0FB003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9FAB6F81CA1E0FC003D8A45 /* Codeforces-applicationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codeforces-applicationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CF-app.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6FC1CA1E0FC003D8A45 /* Codeforces_applicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationTests.m; sourceTree = "<group>"; };
 		B9FAB6FE1CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9FAB7031CA1E0FC003D8A45 /* Codeforces-applicationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Codeforces-applicationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CF-app.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationUITests.m; sourceTree = "<group>"; };
 		B9FAB7091CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,9 +95,9 @@
 		B9FAB6DD1CA1E0FB003D8A45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9FAB6DC1CA1E0FB003D8A45 /* Codeforces-application.app */,
-				B9FAB6F81CA1E0FC003D8A45 /* Codeforces-applicationTests.xctest */,
-				B9FAB7031CA1E0FC003D8A45 /* Codeforces-applicationUITests.xctest */,
+				B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */,
+				B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */,
+				B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +105,7 @@
 		B9FAB6DE1CA1E0FB003D8A45 /* Codeforces-application */ = {
 			isa = PBXGroup;
 			children = (
+				B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */,
 				B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */,
 				B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */,
 				B9FAB6E51CA1E0FB003D8A45 /* ViewController.h */,
@@ -146,9 +149,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9FAB6DB1CA1E0FB003D8A45 /* Codeforces-application */ = {
+		B9FAB6DB1CA1E0FB003D8A45 /* CF-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-application" */;
+			buildConfigurationList = B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-app" */;
 			buildPhases = (
 				B9FAB6D81CA1E0FB003D8A45 /* Sources */,
 				B9FAB6D91CA1E0FB003D8A45 /* Frameworks */,
@@ -158,14 +161,14 @@
 			);
 			dependencies = (
 			);
-			name = "Codeforces-application";
+			name = "CF-app";
 			productName = "Codeforces-application";
-			productReference = B9FAB6DC1CA1E0FB003D8A45 /* Codeforces-application.app */;
+			productReference = B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9FAB6F71CA1E0FC003D8A45 /* Codeforces-applicationTests */ = {
+		B9FAB6F71CA1E0FC003D8A45 /* CF-appTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationTests" */;
+			buildConfigurationList = B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appTests" */;
 			buildPhases = (
 				B9FAB6F41CA1E0FC003D8A45 /* Sources */,
 				B9FAB6F51CA1E0FC003D8A45 /* Frameworks */,
@@ -176,14 +179,14 @@
 			dependencies = (
 				B9FAB6FA1CA1E0FC003D8A45 /* PBXTargetDependency */,
 			);
-			name = "Codeforces-applicationTests";
+			name = "CF-appTests";
 			productName = "Codeforces-applicationTests";
-			productReference = B9FAB6F81CA1E0FC003D8A45 /* Codeforces-applicationTests.xctest */;
+			productReference = B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B9FAB7021CA1E0FC003D8A45 /* Codeforces-applicationUITests */ = {
+		B9FAB7021CA1E0FC003D8A45 /* CF-appUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationUITests" */;
+			buildConfigurationList = B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appUITests" */;
 			buildPhases = (
 				B9FAB6FF1CA1E0FC003D8A45 /* Sources */,
 				B9FAB7001CA1E0FC003D8A45 /* Frameworks */,
@@ -194,9 +197,9 @@
 			dependencies = (
 				B9FAB7051CA1E0FC003D8A45 /* PBXTargetDependency */,
 			);
-			name = "Codeforces-applicationUITests";
+			name = "CF-appUITests";
 			productName = "Codeforces-applicationUITests";
-			productReference = B9FAB7031CA1E0FC003D8A45 /* Codeforces-applicationUITests.xctest */;
+			productReference = B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -222,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "Codeforces-application" */;
+			buildConfigurationList = B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "CF-app" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -235,9 +238,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9FAB6DB1CA1E0FB003D8A45 /* Codeforces-application */,
-				B9FAB6F71CA1E0FC003D8A45 /* Codeforces-applicationTests */,
-				B9FAB7021CA1E0FC003D8A45 /* Codeforces-applicationUITests */,
+				B9FAB6DB1CA1E0FB003D8A45 /* CF-app */,
+				B9FAB6F71CA1E0FC003D8A45 /* CF-appTests */,
+				B9FAB7021CA1E0FC003D8A45 /* CF-appUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -249,6 +252,7 @@
 			files = (
 				B9FAB6F21CA1E0FB003D8A45 /* LaunchScreen.storyboard in Resources */,
 				B9FAB6EF1CA1E0FB003D8A45 /* Assets.xcassets in Resources */,
+				B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */,
 				B9FAB6EA1CA1E0FB003D8A45 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,12 +306,12 @@
 /* Begin PBXTargetDependency section */
 		B9FAB6FA1CA1E0FC003D8A45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9FAB6DB1CA1E0FB003D8A45 /* Codeforces-application */;
+			target = B9FAB6DB1CA1E0FB003D8A45 /* CF-app */;
 			targetProxy = B9FAB6F91CA1E0FC003D8A45 /* PBXContainerItemProxy */;
 		};
 		B9FAB7051CA1E0FC003D8A45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9FAB6DB1CA1E0FB003D8A45 /* Codeforces-application */;
+			target = B9FAB6DB1CA1E0FB003D8A45 /* CF-app */;
 			targetProxy = B9FAB7041CA1E0FC003D8A45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -423,7 +427,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CF-app";
 				SDKROOT = iphoneos9.2;
 			};
 			name = Debug;
@@ -437,7 +441,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CF-app";
 				SDKROOT = iphoneos9.2;
 			};
 			name = Release;
@@ -449,8 +453,8 @@
 				INFOPLIST_FILE = "Codeforces-applicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codeforces-application.app/Codeforces-application";
+				PRODUCT_NAME = "CF-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CF-app.app/CF-app";
 			};
 			name = Debug;
 		};
@@ -461,8 +465,8 @@
 				INFOPLIST_FILE = "Codeforces-applicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Codeforces-application.app/Codeforces-application";
+				PRODUCT_NAME = "CF-app";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CF-app.app/CF-app";
 			};
 			name = Release;
 		};
@@ -472,7 +476,7 @@
 				INFOPLIST_FILE = "Codeforces-applicationUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CF-app";
 				TEST_TARGET_NAME = "Codeforces-application";
 				USES_XCTRUNNER = YES;
 			};
@@ -484,7 +488,7 @@
 				INFOPLIST_FILE = "Codeforces-applicationUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "CF-app";
 				TEST_TARGET_NAME = "Codeforces-application";
 				USES_XCTRUNNER = YES;
 			};
@@ -493,7 +497,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "Codeforces-application" */ = {
+		B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "CF-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB70A1CA1E0FC003D8A45 /* Debug */,
@@ -502,7 +506,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-application" */ = {
+		B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB70D1CA1E0FC003D8A45 /* Debug */,
@@ -511,7 +515,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationTests" */ = {
+		B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB7101CA1E0FC003D8A45 /* Debug */,
@@ -520,7 +524,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "Codeforces-applicationUITests" */ = {
+		B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB7131CA1E0FC003D8A45 /* Debug */,

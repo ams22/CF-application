@@ -16,31 +16,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AiS-cV-hNc">
-                                <rect key="frame" x="43" y="144" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OgQ-Ny-uJT">
-                                <rect key="frame" x="43" y="214" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OgQ-Ny-uJT" userLabel="password">
+                                <rect key="frame" x="43" y="226" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGP-83-9xF">
-                                <rect key="frame" x="20" y="283" width="142" height="30"/>
+                                <rect key="frame" x="20" y="285" width="142" height="30"/>
                                 <state key="normal" title="Try Codeforces now!"/>
                                 <connections>
                                     <segue destination="QuH-5o-Mtq" kind="showDetail" id="29Q-ma-eTb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Codeforces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-KS-L13">
-                                <rect key="frame" x="47" y="20" width="89" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="AVN-va-u0j">
+                                <rect key="frame" x="0.0" y="64" width="300" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codeforces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2H6-KS-L13">
+                                <rect key="frame" x="301" y="292" width="89" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="handle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AiS-cV-hNc" userLabel="username">
+                                <rect key="frame" x="43" y="160" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="2H6-KS-L13"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -60,43 +68,55 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcr-hH-AcF">
-                                <rect key="frame" x="279" y="104" width="56" height="30"/>
+                                <rect key="frame" x="43" y="72" width="56" height="30"/>
                                 <state key="normal" title="главная"/>
                                 <connections>
                                     <segue destination="Z1L-Wr-gnb" kind="showDetail" id="ghL-Qq-i6H"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CKz-HI-lHq">
-                                <rect key="frame" x="262" y="185" width="102" height="30"/>
+                                <rect key="frame" x="20" y="141" width="102" height="30"/>
                                 <state key="normal" title="соревнования"/>
                                 <connections>
-                                    <segue destination="Z1L-Wr-gnb" kind="showDetail" id="v2D-if-MzA"/>
+                                    <segue destination="WDD-IO-1Wn" kind="showDetail" id="JQL-wp-wNg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Codeforces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-AY-Hgl">
-                                <rect key="frame" x="262" y="64" width="89" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP9-AR-Yfb">
+                                <rect key="frame" x="42" y="208" width="58" height="30"/>
+                                <state key="normal" title="рейтинг"/>
+                                <connections>
+                                    <segue destination="iiW-HC-ZNZ" kind="showDetail" id="VXz-Gk-kT1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb6-DO-YIq">
+                                <rect key="frame" x="43" y="276" width="44" height="30"/>
+                                <state key="normal" title="выход"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="hBg-Ld-H0X"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Codeforces" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-AY-Hgl">
+                                <rect key="frame" x="20" y="64" width="89" height="23"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aP9-AR-Yfb">
-                                <rect key="frame" x="277" y="266" width="58" height="30"/>
-                                <state key="normal" title="рейтинг"/>
-                                <connections>
-                                    <segue destination="Z1L-Wr-gnb" kind="showDetail" id="Tqf-WX-rAl"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="cjL-AY-Hgl"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="w4L-fc-O4f"/>
                     <connections>
-                        <segue destination="Z1L-Wr-gnb" kind="show" id="2KK-Pk-7lO"/>
+                        <segue destination="WDD-IO-1Wn" kind="showDetail" id="Ils-fX-eKq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vxW-gV-fy1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1883" y="-26"/>
+            <point key="canvasLocation" x="1883" y="-31"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="F7v-A8-TaC">
@@ -110,8 +130,52 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="some information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJa-33-XIg">
-                                <rect key="frame" x="233" y="224" width="134" height="21"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="qh2-fO-crP">
+                                <rect key="frame" x="20" y="72" width="300" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="some information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dJa-33-XIg">
+                                <rect key="frame" x="222" y="224" width="134" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="главная" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dX7-IV-oYd">
+                                <rect key="frame" x="20" y="145" width="63" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="dJa-33-XIg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="xei-ek-c9n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlt-zI-57V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="767"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xxq-4t-1NY">
+            <objects>
+                <viewController id="Fcm-Tz-5Fc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rft-gg-Gex"/>
+                        <viewControllerLayoutGuide type="bottom" id="vNz-2f-lKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b0y-I3-gt5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-C3-icY">
+                                <rect key="frame" x="20" y="72" width="300" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="соревнования" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-DJ-zgy">
+                                <rect key="frame" x="20" y="145" width="114" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -119,11 +183,73 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="xei-ek-c9n"/>
+                    <navigationItem key="navigationItem" id="K9Z-Mm-vqL"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Mlt-zI-57V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mbc-eT-Vh7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1883" y="767"/>
+            <point key="canvasLocation" x="1883" y="1470"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aT6-PC-gJt">
+            <objects>
+                <viewController id="Gmo-sv-004" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EWk-ad-IrI"/>
+                        <viewControllerLayoutGuide type="bottom" id="XCs-se-naS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="i5e-QE-j8v">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="3eM-Hy-nBT">
+                                <rect key="frame" x="20" y="72" width="300" height="65"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="рейтинг" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2K5-1Z-JW9">
+                                <rect key="frame" x="20" y="145" width="65" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0FE-ci-DC8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pEh-Bj-pJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1883" y="2144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yn0-jH-Jup">
+            <objects>
+                <navigationController id="iiW-HC-ZNZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vJd-t1-mTs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gmo-sv-004" kind="relationship" relationship="rootViewController" id="e5A-Yh-ect"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HVu-u4-Buw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1205" y="2144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="F4h-la-jqu">
+            <objects>
+                <navigationController id="WDD-IO-1Wn" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="fmh-Jp-AEi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Fcm-Tz-5Fc" kind="relationship" relationship="rootViewController" id="0Kd-OZ-d55"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cL0-aC-C4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1198" y="1470"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="R9l-9A-SBS">
@@ -171,7 +297,11 @@
             <point key="canvasLocation" x="378" y="300"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="codeforces.png" width="300" height="65"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="v2D-if-MzA"/>
+        <segue reference="JQL-wp-wNg"/>
+        <segue reference="Eai-RQ-vvC"/>
     </inferredMetricsTieBreakers>
 </document>
