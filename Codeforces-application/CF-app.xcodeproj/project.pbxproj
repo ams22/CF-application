@@ -10,7 +10,6 @@
 		B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */ = {isa = PBXBuildFile; fileRef = B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */; };
 		B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E01CA1E0FB003D8A45 /* main.m */; };
 		B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */; };
-		B9FAB6E71CA1E0FB003D8A45 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E61CA1E0FB003D8A45 /* ViewController.m */; };
 		B9FAB6EA1CA1E0FB003D8A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9FAB6E81CA1E0FB003D8A45 /* Main.storyboard */; };
 		B9FAB6ED1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6EB1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld */; };
 		B9FAB6EF1CA1E0FB003D8A45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9FAB6EE1CA1E0FB003D8A45 /* Assets.xcassets */; };
@@ -42,8 +41,6 @@
 		B9FAB6E01CA1E0FB003D8A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B9FAB6E51CA1E0FB003D8A45 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B9FAB6E61CA1E0FB003D8A45 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		B9FAB6E91CA1E0FB003D8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B9FAB6EC1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Codeforces_application.xcdatamodel; sourceTree = "<group>"; };
 		B9FAB6EE1CA1E0FB003D8A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -108,8 +105,6 @@
 				B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */,
 				B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */,
 				B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */,
-				B9FAB6E51CA1E0FB003D8A45 /* ViewController.h */,
-				B9FAB6E61CA1E0FB003D8A45 /* ViewController.m */,
 				B9FAB6E81CA1E0FB003D8A45 /* Main.storyboard */,
 				B9FAB6EE1CA1E0FB003D8A45 /* Assets.xcassets */,
 				B9FAB6F01CA1E0FB003D8A45 /* LaunchScreen.storyboard */,
@@ -278,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9FAB6E71CA1E0FB003D8A45 /* ViewController.m in Sources */,
 				B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */,
 				B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */,
 				B9FAB6ED1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld in Sources */,
