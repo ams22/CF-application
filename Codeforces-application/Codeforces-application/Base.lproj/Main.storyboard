@@ -196,10 +196,10 @@
             </objects>
             <point key="canvasLocation" x="1883" y="767"/>
         </scene>
-        <!--View Controller-->
+        <!--Contest List View Controller-->
         <scene sceneID="Xxq-4t-1NY">
             <objects>
-                <viewController id="Fcm-Tz-5Fc" sceneMemberID="viewController">
+                <viewController id="Fcm-Tz-5Fc" customClass="ContestListViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rft-gg-Gex"/>
                         <viewControllerLayoutGuide type="bottom" id="vNz-2f-lKi"/>
