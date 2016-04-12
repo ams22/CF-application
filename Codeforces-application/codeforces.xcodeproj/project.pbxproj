@@ -44,7 +44,7 @@
 		B924FC7E1CBD442500E9789D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		B924FC811CBD473900E9789D /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = codeforces.png; path = ../../docs/codeforces.png; sourceTree = "<group>"; };
-		B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CF-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB6DC1CA1E0FB003D8A45 /* codeforces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeforces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6E01CA1E0FB003D8A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,10 +53,10 @@
 		B9FAB6EE1CA1E0FB003D8A45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9FAB6F11CA1E0FB003D8A45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9FAB6F31CA1E0FB003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CF-app.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB6F81CA1E0FC003D8A45 /* codeforces.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeforces.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6FC1CA1E0FC003D8A45 /* Codeforces_applicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationTests.m; sourceTree = "<group>"; };
 		B9FAB6FE1CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CF-app.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB7031CA1E0FC003D8A45 /* codeforces.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeforces.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationUITests.m; sourceTree = "<group>"; };
 		B9FAB7091CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -99,9 +99,9 @@
 		B9FAB6DD1CA1E0FB003D8A45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */,
-				B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */,
-				B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */,
+				B9FAB6DC1CA1E0FB003D8A45 /* codeforces.app */,
+				B9FAB6F81CA1E0FC003D8A45 /* codeforces.xctest */,
+				B9FAB7031CA1E0FC003D8A45 /* codeforces.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,9 +155,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B9FAB6DB1CA1E0FB003D8A45 /* CF-app */ = {
+		B9FAB6DB1CA1E0FB003D8A45 /* codeforces */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-app" */;
+			buildConfigurationList = B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforces" */;
 			buildPhases = (
 				B9FAB6D81CA1E0FB003D8A45 /* Sources */,
 				B9FAB6D91CA1E0FB003D8A45 /* Frameworks */,
@@ -167,14 +167,14 @@
 			);
 			dependencies = (
 			);
-			name = "CF-app";
+			name = codeforces;
 			productName = "Codeforces-application";
-			productReference = B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */;
+			productReference = B9FAB6DC1CA1E0FB003D8A45 /* codeforces.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B9FAB6F71CA1E0FC003D8A45 /* CF-appTests */ = {
+		B9FAB6F71CA1E0FC003D8A45 /* codeforcesTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appTests" */;
+			buildConfigurationList = B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforcesTests" */;
 			buildPhases = (
 				B9FAB6F41CA1E0FC003D8A45 /* Sources */,
 				B9FAB6F51CA1E0FC003D8A45 /* Frameworks */,
@@ -185,14 +185,14 @@
 			dependencies = (
 				B9FAB6FA1CA1E0FC003D8A45 /* PBXTargetDependency */,
 			);
-			name = "CF-appTests";
+			name = codeforcesTests;
 			productName = "Codeforces-applicationTests";
-			productReference = B9FAB6F81CA1E0FC003D8A45 /* CF-app.xctest */;
+			productReference = B9FAB6F81CA1E0FC003D8A45 /* codeforces.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		B9FAB7021CA1E0FC003D8A45 /* CF-appUITests */ = {
+		B9FAB7021CA1E0FC003D8A45 /* codeforcesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appUITests" */;
+			buildConfigurationList = B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforcesUITests" */;
 			buildPhases = (
 				B9FAB6FF1CA1E0FC003D8A45 /* Sources */,
 				B9FAB7001CA1E0FC003D8A45 /* Frameworks */,
@@ -203,9 +203,9 @@
 			dependencies = (
 				B9FAB7051CA1E0FC003D8A45 /* PBXTargetDependency */,
 			);
-			name = "CF-appUITests";
+			name = codeforcesUITests;
 			productName = "Codeforces-applicationUITests";
-			productReference = B9FAB7031CA1E0FC003D8A45 /* CF-app.xctest */;
+			productReference = B9FAB7031CA1E0FC003D8A45 /* codeforces.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -214,12 +214,12 @@
 		B9FAB6D41CA1E0FB003D8A45 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0720;
-				ORGANIZATIONNAME = ioscourse;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = alex;
 				TargetAttributes = {
 					B9FAB6DB1CA1E0FB003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2V75G8JXAV;
+						DevelopmentTeam = 43328XL32R;
 					};
 					B9FAB6F71CA1E0FC003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -231,7 +231,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "CF-app" */;
+			buildConfigurationList = B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "codeforces" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -244,9 +244,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9FAB6DB1CA1E0FB003D8A45 /* CF-app */,
-				B9FAB6F71CA1E0FC003D8A45 /* CF-appTests */,
-				B9FAB7021CA1E0FC003D8A45 /* CF-appUITests */,
+				B9FAB6DB1CA1E0FB003D8A45 /* codeforces */,
+				B9FAB6F71CA1E0FC003D8A45 /* codeforcesTests */,
+				B9FAB7021CA1E0FC003D8A45 /* codeforcesUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,12 +314,12 @@
 /* Begin PBXTargetDependency section */
 		B9FAB6FA1CA1E0FC003D8A45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9FAB6DB1CA1E0FB003D8A45 /* CF-app */;
+			target = B9FAB6DB1CA1E0FB003D8A45 /* codeforces */;
 			targetProxy = B9FAB6F91CA1E0FC003D8A45 /* PBXContainerItemProxy */;
 		};
 		B9FAB7051CA1E0FC003D8A45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = B9FAB6DB1CA1E0FB003D8A45 /* CF-app */;
+			target = B9FAB6DB1CA1E0FB003D8A45 /* codeforces */;
 			targetProxy = B9FAB7041CA1E0FC003D8A45 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -361,11 +361,13 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_CW_ASM_SYNTAX = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -405,11 +407,12 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_CW_ASM_SYNTAX = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -420,6 +423,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -431,12 +435,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Codeforces-application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = "CF-app";
-				SDKROOT = iphoneos9.2;
+				PRODUCT_NAME = codeforces;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -445,12 +451,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Codeforces-application/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = "CF-app";
-				SDKROOT = iphoneos9.2;
+				PRODUCT_NAME = codeforces;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
@@ -461,8 +469,8 @@
 				INFOPLIST_FILE = "Codeforces-applicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationTests";
-				PRODUCT_NAME = "CF-app";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CF-app.app/CF-app";
+				PRODUCT_NAME = codeforces;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codeforces.app/codeforces";
 			};
 			name = Debug;
 		};
@@ -473,8 +481,8 @@
 				INFOPLIST_FILE = "Codeforces-applicationTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationTests";
-				PRODUCT_NAME = "CF-app";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CF-app.app/CF-app";
+				PRODUCT_NAME = codeforces;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/codeforces.app/codeforces";
 			};
 			name = Release;
 		};
@@ -484,7 +492,7 @@
 				INFOPLIST_FILE = "Codeforces-applicationUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationUITests";
-				PRODUCT_NAME = "CF-app";
+				PRODUCT_NAME = codeforces;
 				TEST_TARGET_NAME = "Codeforces-application";
 				USES_XCTRUNNER = YES;
 			};
@@ -496,7 +504,7 @@
 				INFOPLIST_FILE = "Codeforces-applicationUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-applicationUITests";
-				PRODUCT_NAME = "CF-app";
+				PRODUCT_NAME = codeforces;
 				TEST_TARGET_NAME = "Codeforces-application";
 				USES_XCTRUNNER = YES;
 			};
@@ -505,7 +513,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "CF-app" */ = {
+		B9FAB6D71CA1E0FB003D8A45 /* Build configuration list for PBXProject "codeforces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB70A1CA1E0FC003D8A45 /* Debug */,
@@ -514,7 +522,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-app" */ = {
+		B9FAB70C1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB70D1CA1E0FC003D8A45 /* Debug */,
@@ -523,7 +531,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appTests" */ = {
+		B9FAB70F1CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforcesTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB7101CA1E0FC003D8A45 /* Debug */,
@@ -532,7 +540,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "CF-appUITests" */ = {
+		B9FAB7121CA1E0FC003D8A45 /* Build configuration list for PBXNativeTarget "codeforcesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9FAB7131CA1E0FC003D8A45 /* Debug */,
