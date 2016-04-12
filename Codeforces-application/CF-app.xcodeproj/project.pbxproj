@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B924FC7F1CBD442500E9789D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B924FC7D1CBD442500E9789D /* LoginViewController.m */; };
+		B924FC801CBD442500E9789D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B924FC7E1CBD442500E9789D /* LoginViewController.xib */; };
+		B924FC821CBD473900E9789D /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B924FC811CBD473900E9789D /* PostView.xib */; };
 		B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */ = {isa = PBXBuildFile; fileRef = B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */; };
 		B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E01CA1E0FB003D8A45 /* main.m */; };
 		B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */; };
@@ -36,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B924FC7C1CBD442500E9789D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		B924FC7D1CBD442500E9789D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		B924FC7E1CBD442500E9789D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		B924FC811CBD473900E9789D /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = codeforces.png; path = ../../docs/codeforces.png; sourceTree = "<group>"; };
 		B9FAB6DC1CA1E0FB003D8A45 /* CF-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CF-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6E01CA1E0FB003D8A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -111,6 +118,10 @@
 				B9FAB6F31CA1E0FB003D8A45 /* Info.plist */,
 				B9FAB6EB1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld */,
 				B9FAB6DF1CA1E0FB003D8A45 /* Supporting Files */,
+				B924FC7C1CBD442500E9789D /* LoginViewController.h */,
+				B924FC7D1CBD442500E9789D /* LoginViewController.m */,
+				B924FC7E1CBD442500E9789D /* LoginViewController.xib */,
+				B924FC811CBD473900E9789D /* PostView.xib */,
 			);
 			path = "Codeforces-application";
 			sourceTree = "<group>";
@@ -245,7 +256,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B924FC801CBD442500E9789D /* LoginViewController.xib in Resources */,
 				B9FAB6F21CA1E0FB003D8A45 /* LaunchScreen.storyboard in Resources */,
+				B924FC821CBD473900E9789D /* PostView.xib in Resources */,
 				B9FAB6EF1CA1E0FB003D8A45 /* Assets.xcassets in Resources */,
 				B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */,
 				B9FAB6EA1CA1E0FB003D8A45 /* Main.storyboard in Resources */,
@@ -273,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B924FC7F1CBD442500E9789D /* LoginViewController.m in Sources */,
 				B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */,
 				B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */,
 				B9FAB6ED1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld in Sources */,
