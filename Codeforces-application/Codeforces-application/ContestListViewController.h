@@ -12,5 +12,5 @@
 
 @property (nonatomic , weak) IBOutlet
 UITableView * tableView;
-
+-(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) response withError:(NSError*) error;
 @end

@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 
 @implementation ContestListManager
--(void)getCurrentContestList {
+-(void)uploadCurrentContestListForContestListViewController:(ContestListViewController*)currentContestListViewController {
     //some magic whenever;
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
@@ -19,11 +19,7 @@
     NSURLRequest *request = [NSURLRequest requestWithURL:URL];
     
     NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            NSLog(@"%@ %@", response, responseObject);
-        }
+        [currentContestListViewController processingResponceObject:responseObject withResponce:response withError:error];
     }];
     [dataTask resume];
 }

@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ContestListViewController.h"
 
 @interface ContestListManager : NSObject
-- (void) getCurrentContestList;
-
+-(void)uploadCurrentContestListForContestListViewController:(ContestListViewController*)currentContestListViewController;
 @end

@@ -29,7 +29,7 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     ContestListManager* manager = [[ContestListManager alloc] init];
-//    [manager getCurrentContestList];
+    [manager uploadCurrentContestListForContestListViewController: self];
     
     ContestViewController * contestView = [ContestViewController loadFromNib];
     
@@ -39,6 +39,15 @@
 //    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:animated];
 //    [self.tableView insertSubview:contestView atIndex:0];
 //    [self.tableView insertSubview:contestView atIndex:1];
+}
+
+-(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) response withError:(NSError*) error {
+     NSLog(@"processing responce...");
+    if (error) {
+        NSLog(@"Error: %@", error);
+    } else {
+        NSLog(@"%@ %@", response, responseObject);
+    }
 }
 
 /*
