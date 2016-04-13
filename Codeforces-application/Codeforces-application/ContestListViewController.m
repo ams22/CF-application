@@ -8,6 +8,7 @@
 
 #import "ContestListViewController.h"
 #import "ContestListManager.h"
+#import "ContestViewController.h"
 
 @interface ContestListViewController ()
 
@@ -28,7 +29,16 @@
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     ContestListManager* manager = [[ContestListManager alloc] init];
-    [manager getCurrentContestList];
+//    [manager getCurrentContestList];
+    
+    ContestViewController * contestView = [ContestViewController loadFromNib];
+    
+    [self.tableView beginUpdates];
+//    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:animated];
+    [self.tableView endUpdates];
+//    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:animated];
+//    [self.tableView insertSubview:contestView atIndex:0];
+//    [self.tableView insertSubview:contestView atIndex:1];
 }
 
 /*

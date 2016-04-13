@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B924FC7F1CBD442500E9789D /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B924FC7D1CBD442500E9789D /* LoginViewController.m */; };
-		B924FC801CBD442500E9789D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B924FC7E1CBD442500E9789D /* LoginViewController.xib */; };
-		B924FC821CBD473900E9789D /* PostView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B924FC811CBD473900E9789D /* PostView.xib */; };
 		B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */ = {isa = PBXBuildFile; fileRef = B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */; };
 		B9EC58B31CBD9B690002454D /* ContestListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC58B11CBD9B690002454D /* ContestListViewController.m */; };
-		B9EC58B41CBD9B690002454D /* ContestListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B9EC58B21CBD9B690002454D /* ContestListViewController.xib */; };
 		B9EC58BA1CBD9D600002454D /* ContestListManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B9EC58B91CBD9D600002454D /* ContestListManager.m */; };
 		B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E01CA1E0FB003D8A45 /* main.m */; };
 		B9FAB6E41CA1E0FB003D8A45 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */; };
@@ -23,6 +20,8 @@
 		B9FAB6FD1CA1E0FC003D8A45 /* Codeforces_applicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB6FC1CA1E0FC003D8A45 /* Codeforces_applicationTests.m */; };
 		B9FAB7081CA1E0FC003D8A45 /* Codeforces_applicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */; };
 		C560A74B23351E8A866C12BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F99F42E0B9205329968AEDC /* libPods.a */; };
+		FA2BE0D11CBE94DE00FA4E91 /* ContestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */; };
+		FA2BE0D41CBEB23700FA4E91 /* ContestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,12 +47,9 @@
 		7F99F42E0B9205329968AEDC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B924FC7C1CBD442500E9789D /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		B924FC7D1CBD442500E9789D /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
-		B924FC7E1CBD442500E9789D /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
-		B924FC811CBD473900E9789D /* PostView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostView.xib; sourceTree = "<group>"; };
 		B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = codeforces.png; path = ../../docs/codeforces.png; sourceTree = "<group>"; };
 		B9EC58B01CBD9B690002454D /* ContestListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestListViewController.h; sourceTree = "<group>"; };
 		B9EC58B11CBD9B690002454D /* ContestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestListViewController.m; sourceTree = "<group>"; };
-		B9EC58B21CBD9B690002454D /* ContestListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContestListViewController.xib; sourceTree = "<group>"; };
 		B9EC58B81CBD9D600002454D /* ContestListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestListManager.h; sourceTree = "<group>"; };
 		B9EC58B91CBD9D600002454D /* ContestListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestListManager.m; sourceTree = "<group>"; };
 		B9FAB6DC1CA1E0FB003D8A45 /* codeforces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = codeforces.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -71,6 +67,9 @@
 		B9FAB7031CA1E0FC003D8A45 /* codeforces.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = codeforces.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationUITests.m; sourceTree = "<group>"; };
 		B9FAB7091CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContestView.xib; sourceTree = "<group>"; };
+		FA2BE0D21CBEB23700FA4E91 /* ContestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestViewController.h; sourceTree = "<group>"; };
+		FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +132,7 @@
 		B9FAB6DE1CA1E0FB003D8A45 /* Codeforces-application */ = {
 			isa = PBXGroup;
 			children = (
+				FA2BE0CF1CBE94AD00FA4E91 /* Xibs */,
 				B99E6FFA1CA2BA9B0085DEEF /* codeforces.png */,
 				B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */,
 				B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */,
@@ -144,11 +144,11 @@
 				B9FAB6DF1CA1E0FB003D8A45 /* Supporting Files */,
 				B924FC7C1CBD442500E9789D /* LoginViewController.h */,
 				B924FC7D1CBD442500E9789D /* LoginViewController.m */,
-				B924FC7E1CBD442500E9789D /* LoginViewController.xib */,
-				B924FC811CBD473900E9789D /* PostView.xib */,
+				FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */,
+				FA2BE0D21CBEB23700FA4E91 /* ContestViewController.h */,
+				FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */,
 				B9EC58B01CBD9B690002454D /* ContestListViewController.h */,
 				B9EC58B11CBD9B690002454D /* ContestListViewController.m */,
-				B9EC58B21CBD9B690002454D /* ContestListViewController.xib */,
 				B9EC58B81CBD9D600002454D /* ContestListManager.h */,
 				B9EC58B91CBD9D600002454D /* ContestListManager.m */,
 			);
@@ -187,6 +187,13 @@
 				7F99F42E0B9205329968AEDC /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2BE0CF1CBE94AD00FA4E91 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Xibs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,10 +303,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B924FC801CBD442500E9789D /* LoginViewController.xib in Resources */,
 				B9FAB6F21CA1E0FB003D8A45 /* LaunchScreen.storyboard in Resources */,
-				B9EC58B41CBD9B690002454D /* ContestListViewController.xib in Resources */,
-				B924FC821CBD473900E9789D /* PostView.xib in Resources */,
+				FA2BE0D11CBE94DE00FA4E91 /* ContestView.xib in Resources */,
 				B9FAB6EF1CA1E0FB003D8A45 /* Assets.xcassets in Resources */,
 				B99E6FFB1CA2BA9B0085DEEF /* codeforces.png in Resources */,
 				B9FAB6EA1CA1E0FB003D8A45 /* Main.storyboard in Resources */,
@@ -380,6 +385,7 @@
 				B9EC58BA1CBD9D600002454D /* ContestListManager.m in Sources */,
 				B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */,
 				B9FAB6ED1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld in Sources */,
+				FA2BE0D41CBEB23700FA4E91 /* ContestViewController.m in Sources */,
 				B9EC58B31CBD9B690002454D /* ContestListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
