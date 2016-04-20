@@ -196,7 +196,7 @@
             </objects>
             <point key="canvasLocation" x="1883" y="767"/>
         </scene>
-        <!--Contest List View Controller-->
+        <!--Contests-->
         <scene sceneID="Xxq-4t-1NY">
             <objects>
                 <viewController id="Fcm-Tz-5Fc" customClass="ContestListViewController" sceneMemberID="viewController">
@@ -208,24 +208,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-C3-icY">
-                                <rect key="frame" x="20" y="72" width="300" height="65"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="соревнования" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-DJ-zgy">
-                                <rect key="frame" x="20" y="145" width="114" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uRY-45-DVk">
-                                <rect key="frame" x="0.0" y="174" width="600" height="364"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uRY-45-DVk">
+                                <rect key="frame" x="0.0" y="145" width="600" height="455"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <sections/>
                             </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codeforces.png" translatesAutoresizingMaskIntoConstraints="NO" id="6ug-C3-icY">
+                                <rect key="frame" x="150" y="72" width="300" height="65"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6ug-C3-icY" firstAttribute="centerX" secondItem="b0y-I3-gt5" secondAttribute="centerX" id="4Pd-Dh-gp5"/>
+                            <constraint firstItem="6ug-C3-icY" firstAttribute="top" secondItem="rft-gg-Gex" secondAttribute="bottom" constant="8" symbolic="YES" id="IS7-JU-Gde"/>
+                            <constraint firstItem="uRY-45-DVk" firstAttribute="leading" secondItem="b0y-I3-gt5" secondAttribute="leading" id="QIS-so-kUw"/>
+                            <constraint firstItem="uRY-45-DVk" firstAttribute="bottom" secondItem="vNz-2f-lKi" secondAttribute="top" id="Yjz-ap-qfV"/>
+                            <constraint firstItem="uRY-45-DVk" firstAttribute="top" secondItem="6ug-C3-icY" secondAttribute="bottom" constant="8" id="a8F-q8-HKS"/>
+                            <constraint firstItem="uRY-45-DVk" firstAttribute="centerX" secondItem="6ug-C3-icY" secondAttribute="centerX" id="ko7-2N-fDf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="K9Z-Mm-vqL"/>
+                    <navigationItem key="navigationItem" title="Contests" id="K9Z-Mm-vqL">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="bpw-Tj-tKk"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="uRY-45-DVk" id="99H-Qv-cKH"/>
                     </connections>

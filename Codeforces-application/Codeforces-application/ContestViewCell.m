@@ -6,10 +6,10 @@
 //  Copyright © 2016 alex. All rights reserved.
 //
 
-#import "ContestViewController.h"
+#import "ContestViewCell.h"
 @import UIKit;
-@implementation ContestViewController
 
+@implementation ContestViewCell
 + (instancetype)loadFromNib {
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     NSString *nibName = @"ContestView";
@@ -17,12 +17,22 @@
     return [nibObjects firstObject];
 }
 
++ (instancetype) initWithString:(NSString *) info {
+    ContestViewCell * newObj = [[ContestViewCell alloc] init];
+    newObj.contestInfo.text = info;
+    return newObj;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
     self.contestInfo.backgroundColor = [UIColor colorWithRed:0.5 green:0.0 blue:0.1 alpha:0.5];
     self.contestInfo.text = @"Lool";
-//    self.imag.image = [UIImage imageNamed:@"icon"];
-//    self.imageView.layer.cornerRadius = 21.f;
+}
+
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
+    [super setSelected:selected animated:animated];
+    
+    // Configure the view for the selected state
 }
 
 @end

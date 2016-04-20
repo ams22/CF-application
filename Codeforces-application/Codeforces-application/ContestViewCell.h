@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ContestViewController : UIView
+@interface ContestViewCell : UITableViewCell
 
 + (instancetype) loadFromNib;
++ (instancetype) initWithString:(NSString *) info;
 
 @property (nonatomic , weak) IBOutlet
 UILabel * contestInfo;

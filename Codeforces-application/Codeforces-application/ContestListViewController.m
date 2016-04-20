@@ -8,18 +8,72 @@
 
 #import "ContestListViewController.h"
 #import "ContestListManager.h"
-#import "ContestViewController.h"
+#import "ContestViewCell.h"
 
-@interface ContestListViewController ()
+@interface ContestListViewController () <UITableViewDataSource , UITableViewDelegate>
+
+@property (nonatomic , weak) IBOutlet
+UITableView * tableView;
+
+@property (nonatomic , strong)
+NSArray * content;
+
+@property (nonatomic , strong)
+NSArray * test_content;
+
+@property (nonatomic , strong)
+ContestListManager * manager;
 
 @end
 
 @implementation ContestListViewController
 
+//-(CGFloat) tableView:(UITableView *) tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+//    NSInteger idx = indexPath.row;
+//    
+//    ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
+//    
+//    return 0;
+//}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger idx = indexPath.row;
+    ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
+    NSString * text = _test_content[idx];
+    cell.contestInfo.text = text;
+
+    NSLog(@"get Obj");
+    return cell;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSLog(@"count");
+
+    return self.test_content.count;
+//    if(section != 0) return 0;
+//    if(_content == nil) {
+//        return 0;
+//    }
+//    return [_content count];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.manager = [[ContestListManager alloc] init];
+    
+    NSString * first = @"loaoaoaaoaoak\naksdkasjdl\nkdkasda\nadkasd\nlasda\nklasklda;alsd;als;\n\n\n\n\n\n\nlaskdl;aksdkas;dk\n\n\n\nlakla;sk";
+    _test_content = @[first , @"second" , @"third"];
+    
+    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+    UINib *cellNib = [UINib nibWithNibName:@"ContestView" bundle: bundle];
+    [_tableView registerNib:cellNib forCellReuseIdentifier:@"ContestViewCell"];
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    self.tableView.estimatedRowHeight = 200.f;
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -28,36 +82,21 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    ContestListManager* manager = [[ContestListManager alloc] init];
-    [manager uploadCurrentContestListForContestListViewController: self];
-    
-    ContestViewController * contestView = [ContestViewController loadFromNib];
-    
-    [self.tableView beginUpdates];
-//    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:animated];
-    [self.tableView endUpdates];
-//    [self.tableView insertSections:[NSIndexSet indexSetWithIndex:1] withRowAnimation:animated];
-//    [self.tableView insertSubview:contestView atIndex:0];
-//    [self.tableView insertSubview:contestView atIndex:1];
+    [self.manager uploadCurrentContestListForContestListViewController: self];
+    NSLog(@"viewDidAppear");
 }
 
 -(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) response withError:(NSError*) error {
-     NSLog(@"processing responce...");
-    if (error) {
-        NSLog(@"Error: %@", error);
-    } else {
-        NSLog(@"%@ %@", response, responseObject);
-    }
+//    self.content = @[response];
+//    NSLog(@"get");
+    [self.tableView reloadData];
+    
+//     NSLog(@"processing responce...");
+//    if (error) {
+//        NSLog(@"Error: %@", error);
+//    } else {
+//        NSLog(@"%@ %@", response, responseObject);
+//    }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
