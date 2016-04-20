@@ -21,7 +21,7 @@
 		B9FAB7081CA1E0FC003D8A45 /* Codeforces_applicationUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */; };
 		C560A74B23351E8A866C12BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F99F42E0B9205329968AEDC /* libPods.a */; };
 		FA2BE0D11CBE94DE00FA4E91 /* ContestView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */; };
-		FA2BE0D41CBEB23700FA4E91 /* ContestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */; };
+		FA2BE0D41CBEB23700FA4E91 /* ContestViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2BE0D31CBEB23700FA4E91 /* ContestViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +68,8 @@
 		B9FAB7071CA1E0FC003D8A45 /* Codeforces_applicationUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Codeforces_applicationUITests.m; sourceTree = "<group>"; };
 		B9FAB7091CA1E0FC003D8A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContestView.xib; sourceTree = "<group>"; };
-		FA2BE0D21CBEB23700FA4E91 /* ContestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestViewController.h; sourceTree = "<group>"; };
-		FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestViewController.m; sourceTree = "<group>"; };
+		FA2BE0D21CBEB23700FA4E91 /* ContestViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestViewCell.h; sourceTree = "<group>"; };
+		FA2BE0D31CBEB23700FA4E91 /* ContestViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,8 +145,8 @@
 				B924FC7C1CBD442500E9789D /* LoginViewController.h */,
 				B924FC7D1CBD442500E9789D /* LoginViewController.m */,
 				FA2BE0D01CBE94DE00FA4E91 /* ContestView.xib */,
-				FA2BE0D21CBEB23700FA4E91 /* ContestViewController.h */,
-				FA2BE0D31CBEB23700FA4E91 /* ContestViewController.m */,
+				FA2BE0D21CBEB23700FA4E91 /* ContestViewCell.h */,
+				FA2BE0D31CBEB23700FA4E91 /* ContestViewCell.m */,
 				B9EC58B01CBD9B690002454D /* ContestListViewController.h */,
 				B9EC58B11CBD9B690002454D /* ContestListViewController.m */,
 				B9EC58B81CBD9D600002454D /* ContestListManager.h */,
@@ -385,7 +385,7 @@
 				B9EC58BA1CBD9D600002454D /* ContestListManager.m in Sources */,
 				B9FAB6E11CA1E0FB003D8A45 /* main.m in Sources */,
 				B9FAB6ED1CA1E0FB003D8A45 /* Codeforces_application.xcdatamodeld in Sources */,
-				FA2BE0D41CBEB23700FA4E91 /* ContestViewController.m in Sources */,
+				FA2BE0D41CBEB23700FA4E91 /* ContestViewCell.m in Sources */,
 				B9EC58B31CBD9B690002454D /* ContestListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
