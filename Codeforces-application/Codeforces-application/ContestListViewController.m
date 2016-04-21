@@ -19,7 +19,7 @@ UITableView * tableView;
 NSArray * content;
 
 @property (nonatomic , strong)
-NSArray * test_content;
+NSArray * responceList;
 
 @property (nonatomic , strong)
 ContestListManager * manager;
@@ -39,8 +39,8 @@ ContestListManager * manager;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger idx = indexPath.row;
     ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
-    NSString * text = _test_content[idx];
-    cell.contestInfo.text = text;
+    NSString * contest = _responceList[idx];
+    cell.contestInfo.text = contest;
 
     NSLog(@"get Obj");
     return cell;
@@ -49,7 +49,7 @@ ContestListManager * manager;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     NSLog(@"count");
 
-    return self.test_content.count;
+    return self.responceList.count;
 //    if(section != 0) return 0;
 //    if(_content == nil) {
 //        return 0;
@@ -61,8 +61,8 @@ ContestListManager * manager;
     [super viewDidLoad];
     self.manager = [[ContestListManager alloc] init];
     
-    NSString * first = @"loaoaoaaoaoak\naksdkasjdl\nkdkasda\nadkasd\nlasda\nklasklda;alsd;als;\n\n\n\n\n\n\nlaskdl;aksdkas;dk\n\n\n\nlakla;sk";
-    _test_content = @[first , @"second" , @"third"];
+//    NSString * first = @"loaoaoaaoaoak\naksdkasjdl\nkdkasda\nadkasd\nlasda\nklasklda;alsd;als;\n\n\n\n\n\n\nlaskdl;aksdkas;dk\n\n\n\nlakla;sk";
+//    _test_content = @[first , @"second" , @"third"];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     UINib *cellNib = [UINib nibWithNibName:@"ContestView" bundle: bundle];
@@ -74,7 +74,6 @@ ContestListManager * manager;
     self.tableView.estimatedRowHeight = 200.f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -90,6 +89,9 @@ ContestListManager * manager;
 -(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) response withError:(NSError*) error {
 //    self.content = @[response];
 //    NSLog(@"get");
+    
+    _responceList = @[@"1", @"2\n2", @"3\n3\n3"];
+    
     [self.tableView reloadData];
     
 //     NSLog(@"processing responce...");
@@ -98,6 +100,7 @@ ContestListManager * manager;
 //    } else {
 //        NSLog(@"%@ %@", response, responseObject);
 //    }
+    
 }
 
 @end
