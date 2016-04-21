@@ -68,6 +68,7 @@ ContestListManager * manager;
     UINib *cellNib = [UINib nibWithNibName:@"ContestView" bundle: bundle];
     [_tableView registerNib:cellNib forCellReuseIdentifier:@"ContestViewCell"];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.estimatedRowHeight = 200.f;

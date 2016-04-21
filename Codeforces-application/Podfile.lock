@@ -20,11 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - EasyMapping (0.15.5):
+    - EasyMapping/Core (= 0.15.5)
+  - EasyMapping/Core (0.15.5)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5)
+  - EasyMapping (~> 0.15.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  EasyMapping: 1433e72eb5224445842ba6e4ca9363dbb8503998
 
 COCOAPODS: 0.39.0
