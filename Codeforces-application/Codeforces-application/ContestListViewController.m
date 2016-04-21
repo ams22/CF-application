@@ -26,6 +26,26 @@ ContestListManager * manager;
 
 @end
 
+//@implementation Responce
+//+(EKObjectMapping *)objectMapping
+//{
+//    return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping *mapping) {
+//        [mapping mapPropertiesFromArray:@[@"status", @"comment"]];
+//        [mapping hasMany:[Contest class] forKeyPath:@"result"];
+//    }];
+//}
+//@end
+
+@implementation Contest
++(EKObjectMapping *)objectMapping
+{
+    return [EKObjectMapping mappingForClass:self withBlock:^(EKObjectMapping *mapping) {
+        [mapping mapPropertiesFromArray:@[@"name", @"phases", @"durationSeconds", @"startTimeSeconds"]];
+    }];
+}
+@end
+
+
 @implementation ContestListViewController
 
 //-(CGFloat) tableView:(UITableView *) tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
@@ -39,9 +59,9 @@ ContestListManager * manager;
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger idx = indexPath.row;
     ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
-    NSString * contest = _responceList[idx];
-    cell.contestInfo.text = contest;
-
+    NSDictionary * contest =  _responceList[idx];
+    cell.contestInfo.text = contest[@"name"];
+    NSLog(@"%@", contest[@"name"]);
     NSLog(@"get Obj");
     return cell;
 }
@@ -86,21 +106,59 @@ ContestListManager * manager;
     NSLog(@"viewDidAppear");
 }
 
--(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) response withError:(NSError*) error {
+-(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) URLresponse withError:(NSError*) error {
 //    self.content = @[response];
 //    NSLog(@"get");
     
-    _responceList = @[@"1", @"2\n2", @"3\n3\n3"];
+//    _responceList = @[@"1", @"2\n2", @"3\n3\n3"];
+
+//    NSLog(@"processing responce...");
+    if (error) {
+        NSLog(@"Error: %@", error);
+        _responceList = @[];
+        return;
+    }
+//
+    NSLog(@"status: %@",responseObject[@"status"]);
+    NSLog(@"result : %@",responseObject[@"result"][0]);
+       if([responseObject[@"status"] isEqualToString:@"FAILED"]) {
+        if(responseObject[@"comment"] != NULL) {
+            NSLog(@"%@",responseObject[@"comment"]);
+        } else {
+            NSLog(@"Unknown Connection Error\n");
+        }
+        _responceList = @[];
+    } else {
+//        _responceList = [EKMapper arrayOfObjectsFromExternalRepresentation:responseObject[@"result"]
+////                                                                    withMapping:[Contest objectMapping]];
+        
+//        NSMutableDictionary *testDictionary = [[NSMutableDictionary alloc] init];
+//        [testDictionary setValue: forKey:
+//        Contest *test = [EKMapper objectFromExternalRepresentation: testd
+//                                                       withMapping:[Contest objectMapping]];
+//        for(id key in responseObject[@"result"][0]) {
+//            NSLog(@"%@ : %@", key, responseObject[@"result"][0][key]);
+//        }
+        _responceList = responseObject[@"result"];
+//
+    }
+//
+//    NSLog(@"%@",_responceList);
+
     
     [self.tableView reloadData];
-    
+//    
 //     NSLog(@"processing responce...");
 //    if (error) {
 //        NSLog(@"Error: %@", error);
 //    } else {
-//        NSLog(@"%@ %@", response, responseObject);
+//        NSLog(responseObject);
+//        //NSDictionary *res = responseObject;
+//        NSDictionary *res2 = @{@"1":@"2",@"2":@"3"};
+////        NSLog(res);
+////        NSLog(res2);
 //    }
-    
+//    
 }
 
 @end
