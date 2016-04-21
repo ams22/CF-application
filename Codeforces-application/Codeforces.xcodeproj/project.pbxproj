@@ -52,7 +52,7 @@
 		B9EC58B11CBD9B690002454D /* ContestListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestListViewController.m; sourceTree = "<group>"; };
 		B9EC58B81CBD9D600002454D /* ContestListManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContestListManager.h; sourceTree = "<group>"; };
 		B9EC58B91CBD9D600002454D /* ContestListManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContestListManager.m; sourceTree = "<group>"; };
-		B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.temp_caseinsensitive_rename.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codeforces.temp_caseinsensitive_rename.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Codeforces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9FAB6E01CA1E0FB003D8A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9FAB6E21CA1E0FB003D8A45 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9FAB6E31CA1E0FB003D8A45 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -122,7 +122,7 @@
 		B9FAB6DD1CA1E0FB003D8A45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.temp_caseinsensitive_rename.app */,
+				B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.app */,
 				B9FAB6F81CA1E0FC003D8A45 /* Codeforces.temp_caseinsensitive_rename.xctest */,
 				B9FAB7031CA1E0FC003D8A45 /* Codeforces.temp_caseinsensitive_rename.xctest */,
 			);
@@ -216,7 +216,7 @@
 			);
 			name = codeforces;
 			productName = "Codeforces-application";
-			productReference = B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.temp_caseinsensitive_rename.app */;
+			productReference = B9FAB6DC1CA1E0FB003D8A45 /* Codeforces.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B9FAB6F71CA1E0FC003D8A45 /* codeforcesTests */ = {
@@ -266,7 +266,6 @@
 				TargetAttributes = {
 					B9FAB6DB1CA1E0FB003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
-						DevelopmentTeam = 2V75G8JXAV;
 					};
 					B9FAB6F71CA1E0FC003D8A45 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -538,7 +537,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = Codeforces.temp_caseinsensitive_rename;
+				PRODUCT_NAME = Codeforces;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
@@ -555,7 +554,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "ioscourse.Codeforces-application";
-				PRODUCT_NAME = Codeforces.temp_caseinsensitive_rename;
+				PRODUCT_NAME = Codeforces;
 				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 			};
