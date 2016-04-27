@@ -5,7 +5,7 @@
 //  Created by Сергей Миллер on 13.04.16.
 //  Copyright © 2016 alex. All rights reserved.
 //
-
+#include <stdlib.h>
 #import "ContestListViewController.h"
 #import "ContestListManager.h"
 #import "ContestViewCell.h"
@@ -23,6 +23,9 @@ NSArray * responceList;
 
 @property (nonatomic , strong)
 ContestListManager * manager;
+
+@property (weak, nonatomic)
+UIRefreshControl *refreshControl;
 
 @end
 
@@ -60,7 +63,13 @@ ContestListManager * manager;
     NSInteger idx = indexPath.row;
     ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
     NSDictionary * contest =  _responceList[idx];
-    cell.contestInfo.text = contest[@"name"];
+
+    
+    long time = [contest[@"startTimeSeconds"] longValue];
+    NSDate * date = [NSDate dateWithTimeIntervalSince1970: time];
+    NSString * name = contest[@"name"];
+    
+    cell.contestInfo.text = [NSString stringWithFormat:@"%@ %@", date, name , nil];
     NSLog(@"%@", contest[@"name"]);
     NSLog(@"get Obj");
     return cell;
@@ -70,19 +79,12 @@ ContestListManager * manager;
     NSLog(@"count");
 
     return self.responceList.count;
-//    if(section != 0) return 0;
-//    if(_content == nil) {
-//        return 0;
-//    }
-//    return [_content count];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.manager = [[ContestListManager alloc] init];
     
-//    NSString * first = @"loaoaoaaoaoak\naksdkasjdl\nkdkasda\nadkasd\nlasda\nklasklda;alsd;als;\n\n\n\n\n\n\nlaskdl;aksdkas;dk\n\n\n\nlakla;sk";
-//    _test_content = @[first , @"second" , @"third"];
     
     NSBundle *bundle = [NSBundle bundleForClass:[self class]];
     UINib *cellNib = [UINib nibWithNibName:@"ContestView" bundle: bundle];
@@ -93,6 +95,16 @@ ContestListManager * manager;
     self.tableView.delegate = self;
     self.tableView.estimatedRowHeight = 200.f;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
+    
+    
+    UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
+    [refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+    [self.tableView addSubview:refreshControl];
+    _refreshControl = refreshControl;
+}
+
+- (IBAction)refresh:(id)sender {
+    [self.manager uploadCurrentContestListForContestListViewController: self];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -102,15 +114,13 @@ ContestListManager * manager;
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    [self.refreshControl beginRefreshing];
     [self.manager uploadCurrentContestListForContestListViewController: self];
     NSLog(@"viewDidAppear");
 }
 
 -(void)processingResponceObject:(id)responseObject withResponce:(NSURLResponse*) URLresponse withError:(NSError*) error {
 //    self.content = @[response];
-//    NSLog(@"get");
-    
-//    _responceList = @[@"1", @"2\n2", @"3\n3\n3"];
 
 //    NSLog(@"processing responce...");
     if (error) {
@@ -129,36 +139,10 @@ ContestListManager * manager;
         }
         _responceList = @[];
     } else {
-//        _responceList = [EKMapper arrayOfObjectsFromExternalRepresentation:responseObject[@"result"]
-////                                                                    withMapping:[Contest objectMapping]];
-        
-//        NSMutableDictionary *testDictionary = [[NSMutableDictionary alloc] init];
-//        [testDictionary setValue: forKey:
-//        Contest *test = [EKMapper objectFromExternalRepresentation: testd
-//                                                       withMapping:[Contest objectMapping]];
-//        for(id key in responseObject[@"result"][0]) {
-//            NSLog(@"%@ : %@", key, responseObject[@"result"][0][key]);
-//        }
         _responceList = responseObject[@"result"];
-//
     }
-//
-//    NSLog(@"%@",_responceList);
-
-    
+    [self.refreshControl endRefreshing];
     [self.tableView reloadData];
-//    
-//     NSLog(@"processing responce...");
-//    if (error) {
-//        NSLog(@"Error: %@", error);
-//    } else {
-//        NSLog(responseObject);
-//        //NSDictionary *res = responseObject;
-//        NSDictionary *res2 = @{@"1":@"2",@"2":@"3"};
-////        NSLog(res);
-////        NSLog(res2);
-//    }
-//    
 }
 
 @end

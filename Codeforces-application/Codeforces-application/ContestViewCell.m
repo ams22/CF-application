@@ -25,8 +25,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    self.contestInfo.backgroundColor = [UIColor colorWithRed:0.5 green:0.0 blue:0.1 alpha:0.5];
-    self.contestInfo.text = @"Lool";
+    self.contestInfo.backgroundColor = [UIColor colorWithRed:0.0 green:0.05 blue:0.1 alpha:0.1];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
