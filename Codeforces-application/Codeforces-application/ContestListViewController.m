@@ -5,11 +5,11 @@
 //  Created by Сергей Миллер on 13.04.16.
 //  Copyright © 2016 alex. All rights reserved.
 //
-#include <stdlib.h>
+//#include <stdlib.h>
 #import "ContestListViewController.h"
 #import "ContestListManager.h"
 #import "ContestViewCell.h"
-
+#import "ContestInfo.h"
 @interface ContestListViewController () <UITableViewDataSource , UITableViewDelegate>
 
 @property (nonatomic , weak) IBOutlet
@@ -20,6 +20,12 @@ NSArray * content;
 
 @property (nonatomic , strong)
 NSArray * responceList;
+
+@property (nonatomic , strong)
+NSMutableArray * pastContestList;
+
+@property (nonatomic , strong)
+NSMutableArray * futureContestList;
 
 @property (nonatomic , strong)
 ContestListManager * manager;
@@ -51,34 +57,42 @@ UIRefreshControl *refreshControl;
 
 @implementation ContestListViewController
 
-//-(CGFloat) tableView:(UITableView *) tableView heightForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
-//    NSInteger idx = indexPath.row;
-//    
-//    ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
-//    
-//    return 0;
-//}
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger section = indexPath.section;
     NSInteger idx = indexPath.row;
+    
     ContestViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"ContestViewCell" forIndexPath:indexPath];
-    NSDictionary * contest =  _responceList[idx];
+     ContestInfo * contest;
+    
+    if(section == 0) {
+         contest = _futureContestList[idx];
+    } else {
+        contest = _pastContestList[idx];
+    }
 
-    
-    long time = [contest[@"startTimeSeconds"] longValue];
-    NSDate * date = [NSDate dateWithTimeIntervalSince1970: time];
-    NSString * name = contest[@"name"];
-    
-    cell.contestInfo.text = [NSString stringWithFormat:@"%@ %@", date, name , nil];
-    NSLog(@"%@", contest[@"name"]);
-    NSLog(@"get Obj");
+    cell.contestInfo.text = [NSString stringWithFormat:@"%@ %@",contest.contestDate, contest.contestName , nil];
     return cell;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSLog(@"count");
+    if(section == 0) {
+        return self.futureContestList.count;
+    } else {
+        return self.pastContestList.count;
+    }
+}
 
-    return self.responceList.count;
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 2;
+}
+
+- (NSString *)tableView:(UITableView *)tableView
+titleForHeaderInSection:(NSInteger)section {
+    if(section == 0) {
+        return @"Current or upcoming contests";
+    } else {
+        return @"Contests history";
+    }
 }
 
 - (void)viewDidLoad {
@@ -141,6 +155,22 @@ UIRefreshControl *refreshControl;
     } else {
         _responceList = responseObject[@"result"];
     }
+    
+    _futureContestList = [[NSMutableArray alloc]init];
+    _pastContestList = [[NSMutableArray alloc]init];
+    
+    long currentTime = [[NSDate date] timeIntervalSince1970];
+    for(int i = 0; i < _responceList.count; ++i) {
+        ContestInfo * contest = [ContestInfo initWithDictionary:_responceList[i]];
+        long timeDiff = currentTime - contest.contestTimeSince1970;
+        
+        if(timeDiff > 0) {
+            [_pastContestList addObject:contest];
+        } else {
+            [_futureContestList addObject:contest];
+        }
+    }
+    
     [self.refreshControl endRefreshing];
     [self.tableView reloadData];
 }
